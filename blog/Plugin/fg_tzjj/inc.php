@@ -1,0 +1,2 @@
+<?php !defined('HY_PATH') && exit('HY_PATH not defined.'); ?>
+{"name":"fg_tzjj","gn":"op","mc":"\u7cbe","mcys":"#FF6347","btys":"#EE4000","btjc":"1","kqzl":"1","zlbt":"\u7cbe\u534e\u5e16\u5b50","zlsl":"5"}

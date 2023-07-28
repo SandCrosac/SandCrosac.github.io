@@ -1,0 +1,41 @@
+<?php 
+$fg = get_plugin_inc('fg_tzjj');
+$zlsl = $fg['zlsl'];
+$Thread = S("Thread");
+$data = $Thread->select('*',['fine'=>1,'LIMIT' =>$zlsl,]);
+?>
+{if $fg['kqzl'] == 1}
+{if !empty($data)}
+<div class="baodgk">
+<p style="font-size: 16px;">更多{$fg.zlbt}</p>
+<div class="baodg">
+{foreach $data as $key => $v}
+<li><span class="jiaj">{$key}</span><a href="{php HYBBS_URL('thread',$v['tid']);}">{php echo $v['title']}</a></li>
+{/foreach}
+</div>
+</div>
+{/if}
+{/if}
+<style>
+.baodgk {
+    background-color: white;
+    line-height: 25px;
+    padding: 10px;
+    color: #999999;
+}
+.baodg {
+    margin-left: 10px;
+    font-size: 14px;
+	    margin-top: 5px;
+}
+span.jiaj {
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    border-radius: 0 3px 3px 3px;
+    background-color: #ff8d89;
+    padding: 1px 5px;
+    color: white;
+    margin-right: 10px;
+}
+</style>

@@ -1,0 +1,2 @@
+<?php !defined('HY_PATH') && exit('HY_PATH not defined.'); ?>
+{"name":"hy_ryxz","gn":"op","jf1":"100","jf2":"200","jf3":"300","jf4":"400","jf5":"500","jf6":"60000","jf7":"70000","bgimg":"Plugin\/hy_ryxz\/upload\/ry3.png"}

@@ -1,0 +1,18 @@
+<?php 
+$fg = get_plugin_inc('fg_tzjj');
+$zlsl = $fg['zlsl'];
+$Thread = S("Thread");
+$data = $Thread->select('*',['fine'=>1,'LIMIT' =>$zlsl,]);
+?>
+{if $fg['kqzl'] == 1}
+{if !empty($data)}
+<div class="right-widget only-logo">
+	<div class="head">{$fg.zlbt}</div>
+	<ul id="right-forum-list">
+		{foreach $data as $v}
+		<li><a href="{php HYBBS_URL('thread',$v['tid']);}">{php echo mb_substr($v['title'],0,19)}</a></li>
+		{/foreach}
+	</ul>
+</div>
+{/if}
+{/if}

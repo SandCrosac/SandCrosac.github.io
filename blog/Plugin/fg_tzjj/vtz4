@@ -1,0 +1,1 @@
+<?php $plugin_inc = get_plugin_inc('fg_tzjj');?>{if $thread_data['fine'] == 1}<font color="{$plugin_inc.btys}">{$thread_data.title}</font>-<font color="{$plugin_inc.mcys}">{$plugin_inc.mc}</font>{else}{$thread_data.title}{/if}
