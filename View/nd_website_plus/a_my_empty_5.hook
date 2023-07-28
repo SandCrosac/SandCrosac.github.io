@@ -1,0 +1,7 @@
+
+//<?
+foreach($thread_data as &$v){
+    $v['user'] = $User->uid_to_user($v['uid']);
+    $v['avatar'] = $this->avatar($v['user']);
+}
+// var_dump($thread_data);exit;
