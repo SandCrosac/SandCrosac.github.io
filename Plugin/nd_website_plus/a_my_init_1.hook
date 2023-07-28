@@ -1,4 +1,0 @@
-
-//<?
-$this->menu_action['collection']='';
-$this->menu_action['visitor']='';
