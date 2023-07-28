@@ -1,6 +1,0 @@
-
-//增加缩略图
-$pic = X('post.img');
-if(!empty($pic)){
-    $img = $pic;
-}

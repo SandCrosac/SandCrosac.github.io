@@ -1,1 +1,0 @@
-<?php $plugin_inc = get_plugin_inc('fg_tzjj');?>{if $v['fine'] == 1}{if $plugin_inc['btjc'] == 1}<strong>{/if}<font color="{$plugin_inc.btys}">{$v.title}</font>-<font color="{$plugin_inc.mcys}">{$plugin_inc.mc}</font>{if $plugin_inc['btjc'] == 1}</strong>{/if}{else}{$v.title}{/if}

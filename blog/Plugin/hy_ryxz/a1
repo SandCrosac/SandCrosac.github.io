@@ -1,3 +1,0 @@
-<a style="color: #09c;" href="<?php HYBBS_URL('forum',$v['fid']); ?>">[ {php echo forum($forum,$v['fid'],'name');} ]</a> <a href="{php HYBBS_URL('thread',$v['tid']);}" > {$v.title}</a>
-						</h4>
-						<div class="meta">

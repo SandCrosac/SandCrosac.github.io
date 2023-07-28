@@ -9,7 +9,6 @@
             <li>类库加载</li>
             <li>COOKIE</li>
             <li>_GET</li>
-            <li>警告</li>
         </ul>
     </div>
     <div id="HY-ID0" style="height: 198px;overflow-y: auto;">
@@ -64,7 +63,7 @@
         <li style="border-top: solid 1px #D2D2D2;">COOKIE个数 (<?php echo count($_COOKIE); ?>)</li>
             
             <?php foreach ($_COOKIE as $k => $v): ?>
-                <li><?php echo htmlspecialchars($k); ?> : <?php echo htmlspecialchars($v); ?></li>
+                <li><?php echo $k; ?> : <?php echo $v; ?></li>
             <?php endforeach; ?>
         </ul>
     </div>
@@ -80,7 +79,7 @@
         <li style="border-top: solid 1px #D2D2D2;">GET个数 (<?php echo count($_GET); ?>)</li>
             
             <?php foreach ($_GET as $k_GET => $v_GET): ?>
-                <li><?php echo htmlspecialchars($k_GET); ?>：<?php echo (is_array($v_GET)?'Json格式化：'.htmlspecialchars(json_encode($v_GET)):htmlspecialchars($v_GET)); ?></li>
+                <li><?php echo $k_GET; ?>：<?php echo (is_array($v_GET)?'Json格式化：'.json_encode($v_GET):$v_GET); ?></li>
             <?php endforeach; ?>
         </ul>
     </div>

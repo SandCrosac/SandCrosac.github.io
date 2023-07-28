@@ -77,8 +77,6 @@ class Line{
 
                 }
             }
-            $Action = preg_replace('/[^a-zA-Z0-9_]+/u','',$Action);
-            $Fun = preg_replace('/[^a-zA-Z0-9_]+/u','',$Fun);
             $_Action = $Action = ucfirst($Action);
             $_Fun = $Fun = ucfirst($Fun);
             $class = "\\Action\\{$_Action}";
