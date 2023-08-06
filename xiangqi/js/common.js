@@ -1,4 +1,3 @@
-/*! 一叶孤舟 | qq:28701884 | 欢迎指教 */
 
 var com = com||{};
 
@@ -147,7 +146,7 @@ com.loadImages = function(stype){
 	document.getElementsByTagName("body")[0].style.background= "url(img/"+stype+"/bg.jpg)";
 	
 }
-
+/* 代码整理：懒人之家 www.lanrenzhijia.com */
 //显示列表
 com.show = function (){
 	com.ct.clearRect(0, 0, com.width, com.height);  
@@ -783,7 +782,7 @@ com.class.Bg = function (img, x, y){
 	this.show = function (){
 		if (this.isShow) com.ct.drawImage(com.bgImg, com.spaceX * this.x,com.spaceY *  this.y);
 	}
-}
+}/* 代码整理：懒人之家 www.lanrenzhijia.com */
 com.class.Pane = function (img, x, y){
 	this.x = x||0; 
     this.y = y||0;

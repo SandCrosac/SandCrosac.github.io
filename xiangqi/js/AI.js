@@ -1,8 +1,9 @@
-/*! 一叶孤舟 | qq:28701884 | 欢迎指教 */
+
 
 var AI = AI||{};
 
 AI.historyTable	=	{};		//历史表
+
 
 
 //人工智能初始化
@@ -255,5 +256,4 @@ AI.evaluate1 = function (map,my){
 	AI.number++;
 	return val*my;
 }
-
 
