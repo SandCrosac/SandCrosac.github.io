@@ -1,1 +1,32 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
 
+.birthday-cake {
+    width: 200px;
+    height: 200px;
+    background-image: url('cake.png'); /* 使用你自己的图片URL */
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.candle {
+    width: 50px;
+    height: 150px;
+    background-color: #ff9900;
+    border-radius: 50% 50% 0 0;
+    position: relative;
+    top: 50px;
+}
+
+.confetti {
+    width: 100px;
+    height: 100px;
+    background-color: #66b3ff;
+    position: relative;
+    bottom: 20px;
+}
